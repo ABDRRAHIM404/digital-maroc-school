@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>inscription</title>
+</head>
+
+<body>
+    <h2>Inscription</h2>
+    <fieldset>
+        <legend>Identite</legend>
+        <form>
+
+            <label for="username">Prenom:</label>
+            <input type="text" id="username" name="username" required
+                placeholder="Entrez votre nom d'utilisateur" /><br /><br />
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required placeholder="Entrez votre email" /><br /><br />
+    </fieldset>
+    <fieldset>
+        <legend>Informations supplementaires</legend>
+        <label for="birthdate">Date de naissance:</label>
+        <input type="date" id="birthdate" name="birthdate" required /><br /><br />
+        <label for="city">Ville:</label>
+        <select id="city" name="city" required>
+            <option value="Belfaa">Belfaa</option>
+            <option value="Biougra">Biougra</option>
+            <option value="Agadir">Agadir</option>
+            <option value="Autre">Autre</option>
+        </select>
+        <br />
+        </fieldset>
+        <br />
+        <label for="level">Niveau en informatique:</label>
+        <br />
+        <input type="radio" id="beginner" name="level" value="Debutant" required />
+        <label for="beginner">Débutant</label>
+        <input type="radio" id="intermediate" name="level" value="Intermediaire" />
+        <label for="intermediate">Intermédiaire</label>
+        <input type="radio" id="advanced" name="level" value="Avance" />
+        <label for="advanced">Avancé</label>
+        <br /><br />
+        <label for="interests">Centres d'intérêt:</label>
+        <br />
+        <input type="checkbox" id="interests" name="interests" value="web" />
+        <label for="interests">Web</label>
+        <input type="checkbox" id="interests" name="interests" value="Mobile" />
+        <label for="interests">Mobile</label>
+        <input type="checkbox" id="interests" name="interests" value="IA" />
+        <label for="interests">Intelligence Artificielle</label> <br /><br />
+        <label for="motivation">Motivation:</label> <br />
+        <textarea id="motivation" name="motivation" rows="6" cols="50"
+            placeholder="Décrivez votre motivation à vous inscrire..."></textarea>
+        <br /><br />
+        <input type="submit" value="Envoyer ma candidature" />
+    
+    </form>
+</body>
+
+</html>

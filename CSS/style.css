@@ -1,0 +1,38 @@
+.name {
+    
+    text-align:right;
+    text-transform: capitalize;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 60px;
+    
+}
+img {
+    position: absolute;
+    left: 5%;
+    top: 3%;
+    margin: 0;
+    border-radius: 50%;
+   
+}
+h2 {
+    font-family: 'Times New Roman', Times, serif; text-transform: capitalize;
+}
+h4 {
+    font-family: 'Times New Roman', Times, serif;
+}
+.cv {
+    display: flex;
+    font-size: 20px;
+    line-height: 1.2;
+    
+}
+.right {
+    width: 65%;
+    padding: 5px;
+}
+.left {
+    width: 35%;
+    background-color: rgb(216, 212, 205);
+    padding: 5%;
+}
+
