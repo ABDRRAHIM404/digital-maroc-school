@@ -1,0 +1,299 @@
+
+
+* {
+    box-sizing: border-box;
+}
+
+
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #252525;
+    background-color: #ffffff;
+    line-height: 1.6;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 35px;
+    color: #302724;
+}
+
+.entet {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 6%;
+    background-color: rgb(59, 49, 49);
+    gap: 20px;
+}
+
+.logo {
+    color: chocolate;
+    font-size: 1.6rem;
+    font-weight: bold;
+    white-space: nowrap;
+    
+}
+
+.menu {
+    display: flex;
+    gap: 28px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.menu a:hover {
+    color: rgb(205, 134, 83);
+}
+
+
+.bannier {
+    position: relative;
+    overflow: hidden;
+}
+
+.bannier img {
+    display: block;
+    width: 100%;
+    height: 460px;
+    object-fit: cover;
+}
+
+.bannier-text {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.55);
+}
+
+.bannier h1 {
+    margin: 0 0 12px;
+    font-size: clamp(2rem, 4vw, 3.2rem);
+    max-width: 800px;
+}
+
+.bannier-text p {
+    font-size: 1.15rem;
+    margin: 0;
+}
+
+
+.btn {
+    display: inline-block;
+    margin-top: 24px;
+    padding: 13px 30px;
+    background-color: rgb(205, 134, 83);
+    color: #201915;
+    text-decoration: none;
+    border-radius: 999px;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+
+.btn:hover {
+    background-color: #e9a66e;
+    transform: translateY(-3px);
+}
+
+
+.conteneur {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 75px 20px;
+}
+
+.cartes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+}
+
+.carte {
+    position: relative;
+    flex: 1 1 250px;
+    max-width: 350px;
+    background-color: azure;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.carte:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.15);
+}
+
+.carte img {
+    display: block;
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+}
+
+.carte-text {
+    padding: 20px;
+}
+
+.carte-text h3 {
+    margin: 0 0 8px;
+    font-size: 1.25rem;
+}
+
+.carte-text p {
+    margin: 0 0 8px;
+    color: rgb(74, 83, 57);
+}
+
+.carte-text .prix {
+    font-weight: bold;
+    font-size: 1.3rem;
+    color: rgb(26, 135, 135);
+    margin-top: 12px;
+}
+
+
+.apropos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding: 75px 8%;
+    background-color: #faf8f5;
+}
+
+.apropos img {
+    flex: 0 1 300px;
+    min-width: 0;
+    width: 100%;
+    max-width: 300px;
+    height: 440px;
+    object-fit: cover;
+    border-radius: 16px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+.apropos-text {
+    flex: 1 1 300px;
+    max-width: 650px;
+    line-height: 1.8;
+}
+
+.apropos-text h2 {
+    text-align: left;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.apropos-text p {
+    margin-bottom: 18px;
+    color: #444;
+}
+
+.apropos-text strong {
+    color: #008b8b;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+    padding: 75px 20px 90px;
+}
+
+.contact h2 {
+    margin: 0;
+}
+
+.contact > p {
+    margin: 0 0 25px;
+    color: #666;
+    font-size: 1.05rem;
+}
+
+.contact-cartes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    width: 100%;
+}
+
+.email,.wts {
+    background-color: #effafa;
+    padding: 35px 30px;
+    width: 300px;
+    border-radius: 50px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.email:hover, .wts:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.12);
+}
+
+.email h4, .wts h4 {
+    font-size: 1.3rem;
+    margin: 0 0 10px;
+    color: #173a38;
+    text-transform: capitalize;
+}
+
+.email p, .wts p {
+    margin: 0 0 25px;
+    color: #576b69;
+}
+
+.btn2 {
+    background-color: #008b8b;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 0.95rem;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn2:hover {
+    background-color: #006666;
+    transform: translateY(-2px);
+}
+
+
+footer {
+    background-color: rgb(59, 49, 49);
+    color: #e8e1dc;
+    text-align: center;
+    padding: 25px 20px;
+    font-size: 0.9rem;
+}
+
+footer p {
+    margin: 0;
+}
+
+
+ 

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stil Dyalk - Mode Marocaine & Internationale</title>
+    <!-- ربط ملف CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- مكتبة الأيقونات FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- خط Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- الشريط العلوي (Header) -->
+    <header class="navbar">
+        <div class="container nav-content">
+            <!-- اللوغو -->
+            <a href="#" class="logo">
+                <i class="fa-solid fa-shirt logo-icon"></i>
+                <div class="logo-text">
+                    <span class="brand-name">Stil Dyalk</span>
+                    <span class="brand-sub">CLOTHING STORE</span>
+                </div>
+            </a>
+
+            <!-- القائمة الرئيسية -->
+            <nav class="nav-links">
+                <a href="#" class="active">Accueil</a>
+                <a href="#">Collections <i class="fa-solid fa-chevron-down text-xs"></i></a>
+                <a href="#">Homme</a>
+                <a href="#">Femme</a>
+                <a href="#">Nouveautés</a>
+                <a href="#">Promotions</a>
+            </nav>
+
+            <!-- أيقونات المستخدم -->
+            <div class="nav-icons">
+                <button aria-label="Recherche"><i class="fa-solid fa-magnifying-glass"></i></button>
+                <button aria-label="Compte"><i class="fa-regular fa-user"></i></button>
+                <button aria-label="Favoris"><i class="fa-regular fa-heart"></i></button>
+                <button class="cart-btn" aria-label="Panier">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <span class="badge">0</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- البانر الرئيسي (Hero Section) -->
+    <section class="hero">
+        <div class="container hero-grid">
+            <div class="hero-text">
+                <span class="hero-tag">MODE MAROCAINE & INTERNATIONALE</span>
+                <h1>Ton Stil,<br><span class="text-red">Dyalk</span></h1>
+                <p>Découvrez notre collection de vêtements modernes et tendance pour tous les styles.</p>
+                <a href="#nouveautes" class="btn-primary">
+                    Voir la collection <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+            <div class="hero-image">
+                <!-- يمكنك تغيير رابط الصورة بصورتك الخاصة -->
+                <img src="https://images.unsplash.com/photo-1523381210434-271e8be1f52b?auto=format&fit=crop&w=900&q=80" alt="Collection Stil Dyalk">
+            </div>
+        </div>
+    </section>
+
+    <!-- شريط المميزات (Features Bar) -->
+    <section class="features">
+        <div class="container features-grid">
+            <div class="feature-item">
+                <i class="fa-solid fa-truck-fast text-red"></i>
+                <span>Livraison partout au Maroc</span>
+            </div>
+            <div class="feature-item">
+                <i class="fa-solid fa-rotate-left text-red"></i>
+                <span>Retour facile (7 jours)</span>
+            </div>
+            <div class="feature-item">
+                <i class="fa-solid fa-shield-halved text-red"></i>
+                <span>Paiement à la livraison</span>
+            </div>
+            <div class="feature-item">
+                <i class="fa-solid fa-headset text-red"></i>
+                <span>Support client</span>
+            </div>
+        </div>
+    </section>
+
+<!-- قسم التصنيفات (Nos Collections) -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Nos Collections</h2>
+                <a href="#" class="view-all">Voir tout <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+             <div class="categories-grid">
+                <a href="#" class="category-card">
+                    <i class="fa-solid fa-shirt"></i>
+                    <span>Sweats & Hoodies</span>
+                </a>
+                <a href="#" class="category-card">
+                    <i class="fa-solid fa-vest"></i>
+                    <span>T-Shirts</span>
+                </a>
+                <a href="#" class="category-card">
+                    <i class="fa-solid fa-user-tie"></i>
+                    <span>Vestes</span>
+                </a>
+                <a href="#" class="category-card">
+                    <i class="fa-solid fa-socks"></i>
+                    <span>Pantalons & Jeans</span>
+                </a>
+                <a href="#" class="category-card">
+                    <i class="fa-solid fa-hat-cowboy"></i>
+                    <span>Accessoires</span>
+                </a>
+                <a href="#" class="category-card promo-card">
+                    <div class="promo-icon">%</div>
+                    <span class="text-red">Promotions</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم المنتجات الجديدة (Nouveautés) -->
+    <section id="nouveautes" class="section pb-large">
+        <div class="container">
+            <div class="section-header">
+                <h2>Nouveautés</h2>
+            </div>
+
+            <div class="products-grid">
+                <!-- منتج 1 -->
+                <div class="product-card">
+                    <div class="product-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=500&q=80" alt="Hoodie Classique">
+                        <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+                    </div>
+                    <div class="product-info">
+                        <h3>Hoodie Classique</h3>
+                        <p class="price">249 MAD</p>
+                    </div>
+                </div>
+
+                <!-- منتج 2 -->
+                <div class="product-card">
+                    <div class="product-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=500&q=80" alt="T-Shirt Basic">
+                        <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+                    </div>
+                    <div class="product-info">
+                        <h3>T-Shirt Basic</h3>
+                        <p class="price">129 MAD</p>
+                    </div>
+                </div>
+
+                <!-- منتج 3 -->
+                <div class="product-card">
+                    <div class="product-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?auto=format&fit=crop&w=500&q=80" alt="Veste Bomber">
+                        <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+                    </div>
+                    <div class="product-info">
+                        <h3>Veste Bomber</h3>
+                        <p class="price">399 MAD</p>
+                    </div>
+                </div>
+
+<!-- منتج 4 -->
+                <div class="product-card">
+                    <div class="product-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1542272604-787c3835535d?auto=format&fit=crop&w=500&q=80" alt="Jean Regular">
+                        <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+                    </div>
+                    <div class="product-info">
+                        <h3>Jean Regular</h3>
+                        <p class="price">299 MAD</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>

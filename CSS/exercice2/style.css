@@ -1,0 +1,64 @@
+.px-et-rem {
+  display: flex;
+  flex-direction: row;
+}
+
+.pxl40 {
+  font-size: 40px;
+}
+
+
+.pxl32 {
+  font-size: 32px;
+}
+
+.pxl24 {
+  font-size: 24px;
+}
+
+.pxl18 {
+  font-size: 18px;
+}
+
+.pxl14 {
+  font-size: 14px;
+}
+
+
+.rem40 {
+  font-size: 2.5rem;
+}
+
+.rem32 {
+  font-size: 2rem;
+}
+
+.rem24 {
+  font-size: 1.5rem;
+}
+
+.rem18 {
+  font-size: 1.125rem;
+}
+
+.rem14 {
+  font-size: 0.875rem;
+}
+
+
+
+.colors {
+    display: flex;
+    flex-direction: row;
+    padding: 0.625rem;
+    background-color: rgb(247, 54, 6);
+    
+}
+ @media (min-width: 768px) {
+    .colors {
+        background-color: rgb(225, 250, 4);
+    }
+}
+@media (min-width:1024px) {
+    .colors { background-color:green}
+}
